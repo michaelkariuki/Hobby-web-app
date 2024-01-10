@@ -29,4 +29,17 @@ Hobby.com is a simple web application developed using Express.js and Handlebars,
    ```bash
    git clone https://github.com/michaelkariuki/Hobby-web-app.git
 
+2. **Install Dependencies:**
+   ```bash
+   npm install
+
+3. **Start the Application:**
+   ```bash
+   npm start
+
+or alternatively use nodemon
+
+3. **Start the Application: nodemon**
+   ```bash
+   nodemon start
 
