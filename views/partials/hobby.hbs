@@ -1,0 +1,40 @@
+<div class="row flex-md-row flex-column col-lg-10 col-xl-8 col p-3 mx-auto">
+    <div class="col" id="hobby" data-user-id="{{userId}}" data-hobby-id="{{data.hobbyId}}">
+        <p class="display-4 text-color" >{{data.hobby}}</p>
+        <p class="lead">Description : {{data.description}}</p>
+        <p class="lead mb-5">Ideal time : {{data.idealTime}}  hrs/week</p>
+        <div><a class="btn btn-sm btn-secondary d-inline-block px-3 mb-2" href="/user/hobby/{{data.hobbyId}}/time/add">Add time to hobby</a></div>
+        <div><a class="btn btn-sm btn-secondary mb-2 px-3" href="/user/hobby/{{data.hobbyId}}/edit">edit information</a></div>
+        <div><button type="button" class="btn btn-sm btn-secondary px-3 mb-2" type="submit"  data-toggle="modal" data-target="#exampleModalCenter">delete hobby</button></div>
+        
+        
+    </div>
+<div id="chart_div"></div>
+</div>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Delete : {{data.hobby}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete this hobby?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
+        <form  method="post">
+          <button type="submit" class="btn btn-secondary">Yes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

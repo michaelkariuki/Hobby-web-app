@@ -1,0 +1,16 @@
+<div class="d-flex w-100 h-100 p-3 mx-auto flex-column text-center">
+    <main role="main" class="inner cover mx-auto" style="max-width: 42em;">
+        <h1 class="cover-heading text-color">This is Hobby.com.</h1>
+        <p class="lead">Hobby.com is a website for tracking your hobbies. Its the leading tracking fitness app in the world! It has state of the art features designed by our team of 
+            experts here in Africa. Hobby.com boasts 100, 000 downloads and traffic of upto 10, 000 people in a day. 
+        </p>
+        <p class="lead mt-2">Want to try out what we have to offer? Click on the link below to sign up</p>
+        <p class="lead">
+            {{#if (loggedIn)}}
+                <a href="/user" class="btn btn-lg btn-secondary">Go to dashboard</a>
+            {{else}}
+                <a href="/auth/registration" class="btn btn-lg btn-secondary">Signup</a>
+            {{/if}}
+        </p>
+    </main>
+</div>

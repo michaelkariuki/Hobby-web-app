@@ -1,0 +1,19 @@
+
+    <p class="lead display-4 w-100 text-center" style="">Dashboard</p>
+
+<div class="list-group col-6" id="dashboard">
+    
+    {{#each data as |hobbyData|}}
+        <a href="/user/hobby/{{hobbyData.hobbyId}}" class="list-group-item list-group-item-action flex-column align-items-start dashboard text-light my-1">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">{{hobbyData.hobby}}</h5>
+            </div>
+            <p class="mb-1 text-truncate">{{hobbyData.description}}</p>
+            <small>Click here to view more</small>
+        </a>
+    {{/each}}
+    
+</div>
+<div id="chart_div"></div>
+
+
